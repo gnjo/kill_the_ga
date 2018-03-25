@@ -3,7 +3,7 @@
  ;
  function main(){
   console.log('boot extention');
-  let killer=()=>{if(!root.ga) return; root.ga=null; console.log('kill the ga')}
+  let killer=()=>{root.ga=(root.ga)?console.log('kill the ga'):null}
   setInterval(killer,1000);
  }
  ;
